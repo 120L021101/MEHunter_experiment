@@ -2,6 +2,11 @@
 # rMETL's param, depending on the actual installation.
 export KNOWN_ME_PATH=
 
+###################################################################
+####### Note that 30x means full data, maybe not exact 30x. #######
+###################################################################
+
+
 ###########################
 # rMETL's 5x HiFi Command #
 ###########################
@@ -42,20 +47,20 @@ rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
 ############################
-# rMETL's 20x HiFi Command #
+# rMETL's 15x HiFi Command #
 ############################
 
-export tempdir=HiFi/rMETL20x
-export result=HiFi/result20x
+export tempdir=HiFi/rMETL15x
+export result=HiFi/result15x
 export ref=../Ref_genome/ref.fa
-export align=../Real_data/HG00731/HiFi/pick_me_20x.bam
+export align=../Real_data/HG00731/HiFi/pick_me_15x.bam
 
 rMETL detection $align $ref $tempdir $result -s 3 -t 4
 
-export result2=./finalresult20x/
+export result2=./finalresult15x/
 rMETL realignment -t 4 ${result}/potential_ME.fa $KNOWN_ME_PATH $result2
 
-export result3=./finalfinalresult20x/
+export result3=./finalfinalresult15x/
 rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
@@ -120,20 +125,20 @@ rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
 ############################
-# rMETL's 20x ONT Command #
+# rMETL's 15x ONT Command #
 ############################
 
-export tempdir=ONT/rMETL20x
-export result=ONT/result20x
+export tempdir=ONT/rMETL15x
+export result=ONT/result15x
 export ref=../Ref_genome/ref.fa
-export align=../Real_data/HG00731/ONT/pick_me_20x.bam
+export align=../Real_data/HG00731/ONT/pick_me_15x.bam
 
 rMETL detection $align $ref $tempdir $result -s 3 -t 4
 
-export result2=./finalresult20x/
+export result2=./finalresult15x/
 rMETL realignment -t 4 ${result}/potential_ME.fa $KNOWN_ME_PATH $result2
 
-export result3=./finalfinalresult20x/
+export result3=./finalfinalresult15x/
 rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
@@ -199,20 +204,20 @@ rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
 ############################
-# rMETL's 20x CLR Command #
+# rMETL's 15x CLR Command #
 ############################
 
-export tempdir=CLR/rMETL20x
-export result=CLR/result20x
+export tempdir=CLR/rMETL15x
+export result=CLR/result15x
 export ref=../Ref_genome/ref.fa
-export align=../Real_data/HG00731/CLR/pick_me_20x.bam
+export align=../Real_data/HG00731/CLR/pick_me_15x.bam
 
 rMETL detection $align $ref $tempdir $result -s 3 -t 4
 
-export result2=./finalresult20x/
+export result2=./finalresult15x/
 rMETL realignment -t 4 ${result}/potential_ME.fa $KNOWN_ME_PATH $result2
 
-export result3=./finalfinalresult20x/
+export result3=./finalfinalresult15x/
 rMETL calling $result2/cluster.sam $ref vcf $result3
 
 
@@ -273,16 +278,16 @@ MEHunter HiFi/10x/cuteSV_HiFi.vcf ../Real_data/HG00731/HiFi/pick_me_10x.bam \
          
 
 ####################
-# 20x HiFi Command #
+# 15x HiFi Command #
 ####################
 
 conda activate cuteSVenv
-cuteSV ../Real_data/HG00731/HiFi/pick_me_20x.bam ../Ref_genome/ref.fa HiFi/20x/cuteSV_HiFi.vcf --genotype \
-         HiFi/20x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
+cuteSV ../Real_data/HG00731/HiFi/pick_me_15x.bam ../Ref_genome/ref.fa HiFi/15x/cuteSV_HiFi.vcf --genotype \
+         HiFi/15x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
 
 conda activate MEHunter
-MEHunter HiFi/20x/cuteSV_HiFi.vcf ../Real_data/HG00731/HiFi/pick_me_20x.bam \
-        HiFi/20x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH HiFi/20x/MEHunterWork HiFi/20x/MEHunter_HiFi.vcf --DL_module $DL_module \
+MEHunter HiFi/15x/cuteSV_HiFi.vcf ../Real_data/HG00731/HiFi/pick_me_15x.bam \
+        HiFi/15x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH HiFi/15x/MEHunterWork HiFi/15x/MEHunter_HiFi.vcf --DL_module $DL_module \
         --retain_work_dir -t 16 --batch_size 32 --MAX_seqs 10
 
 ####################
@@ -331,16 +336,16 @@ MEHunter ONT/10x/cuteSV_ONT.vcf ../Real_data/HG00731/ONT/pick_me_10x.bam \
          
 
 ####################
-# 20x ONT Command #
+# 15x ONT Command #
 ####################
 
 conda activate cuteSVenv
-cuteSV ../Real_data/HG00731/ONT/pick_me_20x.bam ../Ref_genome/ref.fa ONT/20x/cuteSV_ONT.vcf --genotype \
-         ONT/20x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
+cuteSV ../Real_data/HG00731/ONT/pick_me_15x.bam ../Ref_genome/ref.fa ONT/15x/cuteSV_ONT.vcf --genotype \
+         ONT/15x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
 
 conda activate MEHunter
-MEHunter ONT/20x/cuteSV_ONT.vcf ../Real_data/HG00731/ONT/pick_me_20x.bam \
-        ONT/20x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH ONT/20x/MEHunterWork ONT/20x/MEHunter_ONT.vcf --DL_module $DL_module \
+MEHunter ONT/15x/cuteSV_ONT.vcf ../Real_data/HG00731/ONT/pick_me_15x.bam \
+        ONT/15x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH ONT/15x/MEHunterWork ONT/15x/MEHunter_ONT.vcf --DL_module $DL_module \
         --retain_work_dir -t 16 --batch_size 32 --MAX_seqs 10
 
 ####################
@@ -387,21 +392,21 @@ MEHunter CLR/10x/cuteSV_CLR.vcf ../Real_data/HG00731/CLR/pick_me_10x.bam \
          
 
 ####################
-# 20x CLR Command #
+# 15x CLR Command #
 ####################
 
 conda activate cuteSVenv
-cuteSV ../Real_data/HG00731/CLR/pick_me_20x.bam ../Ref_genome/ref.fa CLR/20x/cuteSV_CLR.vcf --genotype \
-         CLR/20x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
+cuteSV ../Real_data/HG00731/CLR/pick_me_15x.bam ../Ref_genome/ref.fa CLR/15x/cuteSV_CLR.vcf --genotype \
+         CLR/15x/cuteWork/ -s 1 -t 16 -L 10000 --report_readid --retain_work_dir --diff_ratio_merging_INS 1.1 --diff_ratio_merging_DEL 1.1 --diff_ratio_filtering_TRA 1.1
 
 conda activate MEHunter
-MEHunter CLR/20x/cuteSV_CLR.vcf ../Real_data/HG00731/CLR/pick_me_20x.bam \
-        CLR/20x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH CLR/20x/MEHunterWork CLR/20x/MEHunter_CLR.vcf --DL_module $DL_module \
+MEHunter CLR/15x/cuteSV_CLR.vcf ../Real_data/HG00731/CLR/pick_me_15x.bam \
+        CLR/15x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH CLR/15x/MEHunterWork CLR/15x/MEHunter_CLR.vcf --DL_module $DL_module \
         --retain_work_dir -t 16 --batch_size 32 --MAX_seqs 10
 
-####################
+###################
 # 30x CLR Command #
-####################
+###################
 
 
 conda activate cuteSVenv
@@ -412,3 +417,12 @@ conda activate MEHunter
 MEHunter CLR/30x/cuteSV_CLR.vcf ../Real_data/HG00731/CLR/pick_me_30x.bam \
         CLR/30x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH CLR/30x/MEHunterWork CLR/30x/MEHunter_CLR.vcf --DL_module $DL_module \
         --retain_work_dir -t 16 --batch_size 32 --MAX_seqs 10
+
+
+
+###################
+# Show the Result #
+###################
+
+python main.py
+python main_no_dl.py
