@@ -412,3 +412,10 @@ conda activate MEHunter
 MEHunter CLR/30x/cuteSV_CLR.vcf ../Simulated_data/CLR/SIM_FCLR_30x_s4_sort.bam \
         CLR/30x/cuteWork/ ../Ref_genome/hg38.fa $KNOWN_ME_PATH CLR/30x/MEHunterWork CLR/30x/MEHunter_CLR.vcf --DL_module $DL_module \
         --retain_work_dir -t 16 --batch_size 32 --MAX_seqs 10
+
+
+###################
+# Show the result #
+###################
+
+python main.py

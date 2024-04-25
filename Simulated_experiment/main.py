@@ -137,21 +137,21 @@ def merit(ans_path, vcf_path):
 
 print("__________MEHunter____CCS_5x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = 'HiFi/MEHunter_Sim_FCCS_UL_5x.vcf'
+vcf_path = 'HiFi/5x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
 print("__________MEHunter____CCS_10x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = 'HiFi/MEHunter_Sim_FCCS_UL_10x.vcf'
+vcf_path = 'HiFi/10x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
 print("__________MEHunter____CCS_20x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = 'HiFi/MEHunter_Sim_FCCS_UL_20x.vcf'
+vcf_path = 'HiFi/20x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
@@ -159,308 +159,153 @@ output_in_format(results)
 
 print("__________MEHunter____CCS_30x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = 'HiFi/MEHunter_Sim_FCCS_UL_30x.vcf'
+vcf_path = 'HiFi/30x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
-# print("__________MEHunter____HiFi_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/HIFI/MEHunter_Sim_FHiFi_5x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____HiFi_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/HIFI/MEHunter_Sim_FHiFi_10x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____ONT_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/ONT/MEHunter_Sim_FONT_5x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
 
 print("__________MEHunter____ONT_5x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = './results/ONT/MEHunter_Sim_FONT_5x.vcf'
+vcf_path = 'ONT/5x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
 print("__________MEHunter____ONT_10x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = './results/ONT/MEHunter_Sim_FONT_10x.vcf'
+vcf_path = 'ONT/10x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
 print("__________MEHunter____ONT_20x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = './results/ONT/MEHunter_Sim_FONT_20x.vcf'
+vcf_path = 'ONT/20x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
 print("__________MEHunter____ONT_30x_____________")
 ans_path = './simulated_answer.bed'
-vcf_path = './results/ONT/MEHunter_Sim_FONT_30x.vcf'
+vcf_path = 'ONT/3x/MEHunter.vcf'
 
 results = merit(ans_path=ans_path, vcf_path=vcf_path)
 output_in_format(results)
 
-# print("__________MEHunter____CLR_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/CLR/MEHunter_Sim_FCLR_5x.vcf'
+print("__________MEHunter____CLR_5x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/5x/MEHunter.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________MEHunter____CLR_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/CLR/MEHunter_Sim_FCLR_10x.vcf'
+print("__________MEHunter____CLR_10x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/10x/MEHunter.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________MEHunter____CLR_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/CLR/MEHunter_Sim_FCLR_20x.vcf'
+print("__________MEHunter____CLR_20x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/20x/MEHunter.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
 
-# print("__________MEHunter____CLR_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/CLR/MEHunter_Sim_FCLR_30x.vcf'
+print("__________MEHunter____CLR_30x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/30x/MEHunter.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________rMETL____CCS_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/SimulateHiFi/finalfinalresult5x/calling.vcf'
+print("__________rMETL____CCS_5x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'HiFi/finalfinalresult5x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
 
-# print("__________rMETL____CCS_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/SimulateHiFi/finalfinalresult10x/calling.vcf'
+print("__________rMETL____CCS_10x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'HiFi/finalfinalresult10x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________rMETL____CCS_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/SimulateHiFi/finalfinalresult20x/calling.vcf'
+print("__________rMETL____CCS_20x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'HiFi/finalfinalresult20x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
 
-# print("__________rMETL____CCS_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/SimulateHiFi/finalfinalresult30x/calling.vcf'
+print("__________rMETL____CCS_30x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'HiFi/finalfinalresult30x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________rMETL____HiFi_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/HIFI/finalfinalresult5x/calling.vcf'
+print("__________rMETL____ONT_5x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'ONT/finalfinalresult5x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
+print("__________rMETL____ONT_10x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'ONT/finalfinalresult10x/calling.vcf'
 
-# print("__________rMETL____HiFi_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/HIFI/finalfinalresult10x/calling.vcf'
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
 
-# print("__________rMETL____ONT_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/ONT/finalfinalresult5x/calling.vcf'
+print("__________rMETL____ONT_20x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'ONT/finalfinalresult20x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# print("__________rMETL____ONT_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/ONT/finalfinalresult10x/calling.vcf'
+print("__________rMETL____ONT_30x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'ONT/finalfinalresult30x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
+print("__________rMETL____CLR_5x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/finalfinalresult5x/calling.vcf'
 
-# print("__________rMETL____ONT_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/ONT/finalfinalresult20x/calling.vcf'
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+print("__________rMETL____CLR_10x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/finalfinalresult10x/calling.vcf'
 
-# print("__________rMETL____ONT_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/ONT/finalfinalresult30x/calling.vcf'
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
+print("__________rMETL____CLR_20x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/finalfinalresult20x/calling.vcf'
 
-# print("__________rMETL____CLR_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/CLR/finalfinalresult5x/calling.vcf'
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
 
-# print("__________rMETL____CLR_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/CLR/finalfinalresult10x/calling.vcf'
+print("__________rMETL____CLR_30x_____________")
+ans_path = './simulated_answer.bed'
+vcf_path = 'CLR/finalfinalresult30x/calling.vcf'
 
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________rMETL____CLR_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/CLR/finalfinalresult20x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________rMETL____CLR_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/CLR/finalfinalresult30x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____NANOPORE_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/NANOPORE/MEHunter_Sim_NANOPORE_5x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____NANOPORE_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/NANOPORE/MEHunter_Sim_NANOPORE_10x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____NANOPORE_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/NANOPORE/MEHunter_Sim_NANOPORE_20x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____NANOPORE_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/NANOPORE/MEHunter_Sim_NANOPORE_30x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________MEHunter____PACBIO_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/PACBIO/MEHunter_Sim_PACBIO_5x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________MEHunter____PACBIO_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/PACBIO/MEHunter_Sim_PACBIO_10x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________MEHunter____PACBIO_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/PACBIO/MEHunter_Sim_PACBIO_20x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________MEHunter____PACBIO_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = './results/PACBIO/MEHunter_Sim_PACBIO_30x.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________rMETL____NANOPORE_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/NANOPORE/finalfinalresult5x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________rMETL____NANOPORE_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/NANOPORE/finalfinalresult10x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________rMETL____NANOPORE_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/NANOPORE/finalfinalresult20x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________rMETL____NANOPORE_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/NANOPORE/finalfinalresult30x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-
-# print("__________rMETL____PACBIO_5x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/PACBIO/finalfinalresult5x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________rMETL____PACBIO_10x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/PACBIO/finalfinalresult10x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________rMETL____PACBIO_20x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/PACBIO/finalfinalresult20x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
-# print("__________rMETL____PACBIO_30x_____________")
-# ans_path = './simulated_answer.bed'
-# vcf_path = '/mnt/mybook/Simulated/results/PACBIO/finalfinalresult30x/calling.vcf'
-
-# results = merit(ans_path=ans_path, vcf_path=vcf_path)
-# output_in_format(results)
-
+results = merit(ans_path=ans_path, vcf_path=vcf_path)
+output_in_format(results)
